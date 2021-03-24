@@ -28,4 +28,20 @@ listaCognomi.push(cognomeUtente);
 listaCognomi.sort();
 console.log(listaCognomi);
 
+//creo ciclo per scorrere la lista aggiornata
+var cognomeTrovato;
+
+for ( var i = 0; i < listaCognomi.length; i++){
+    var questoCognome = listaCognomi[i];
+    //console.log(questoCognome);
+
+    if (questoCognome == cognomeUtente){
+        cognomeTrovato = i + 1 ;
+        //console.log(cognomeTrovato);
+    }
+}
+
+//stampa
+alert("Il tuo cognome all' interno della lista è " + cognomeTrovato );
+
 
