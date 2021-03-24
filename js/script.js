@@ -1,0 +1,31 @@
+//chiedi all’utente il cognome
+//inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
+//stampa la lista ordinata alfabeticamente
+//scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova (facciamo questo in 2 versioni: col ciclo for e col while)
+
+//chiedere all'utente il proprio cognome (stringa)
+var cognomeUtente = prompt('Dimmi il tuo cognome');
+//console.log(cognomeUtente);
+
+//crea array con altri cognomi in ordine alfabetico
+var listaCognomi = [
+    'rossi',
+    'berrettoni',
+    'tini',
+    'napolitano',
+    'bianchi'
+];
+//console.log(listaCognomi);
+
+//listaCognomi.sort();
+//console.log(listaCognomi);
+
+//inserisci cognome chiesto nell' array
+listaCognomi.push(cognomeUtente);
+//console.log(listaCognomi);
+
+//stampa dell'array in ordine alfabetico + cognome inserito dall' utente
+listaCognomi.sort();
+console.log(listaCognomi);
+
+
