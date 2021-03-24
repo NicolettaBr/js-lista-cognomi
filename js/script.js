@@ -28,7 +28,9 @@ listaCognomi.push(cognomeUtente);
 listaCognomi.sort();
 console.log(listaCognomi);
 
-//creo ciclo per scorrere la lista aggiornata
+/*
+//creo ciclo FOR per scorrere la lista aggiornata
+
 var cognomeTrovato;
 
 for ( var i = 0; i < listaCognomi.length; i++){
@@ -43,5 +45,23 @@ for ( var i = 0; i < listaCognomi.length; i++){
 
 //stampa
 alert("Il tuo cognome all' interno della lista è " + cognomeTrovato );
+*/
 
+//creo ciclo WHILE per scorrere la lista aggiornata
+var cognomeTrovato;
 
+var i = 0;
+while ( i < listaCognomi.length ){
+    var questoCognome = listaCognomi[i];
+    //console.log(questoCognome);
+
+    if (questoCognome == cognomeUtente){
+        cognomeTrovato = i + 1 ;
+        //console.log(cognomeTrovato);
+    }
+
+    i++;
+}
+
+//stampa
+alert("Il tuo cognome all' interno della lista è " + cognomeTrovato );
