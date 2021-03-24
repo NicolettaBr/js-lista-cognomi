@@ -28,6 +28,15 @@ listaCognomi.push(cognomeUtente);
 listaCognomi.sort();
 console.log(listaCognomi);
 
+for ( var i = 0; i < listaCognomi.length; i++){
+    var questoCognome = listaCognomi[i];
+    //console.log(questoCognome);
+    var contenutoUl = document.getElementById('lista-cognomi').innerHTML;
+    //console.log(contenutoUl);
+    document.getElementById('lista-cognomi').innerHTML = contenutoUl + '<li>' + questoCognome + '</li>';
+
+}
+
 /*
 //creo ciclo FOR per scorrere la lista aggiornata
 
